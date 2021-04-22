@@ -1,0 +1,68 @@
+<div class="global">
+
+  <!--   Шапка-->
+  <div class="containerParent">
+    <div class="TicketList">
+      <button class="buttonTicketList" routerLink="/tickets">Ticket List</button>
+    </div>
+
+    <h1>Ticket(2) - Task 2</h1>
+
+    <div class="Edit">
+      <button class="buttonEdit" routerLink="/editTicket">Edit</button>
+    </div>
+  </div>
+
+  <!--  Инфо-->
+  <div class="containerParent2">
+
+    <div class="info">
+      <div class="containerOne">
+        <p>Create on:</p>
+        <p>Status:</p>
+        <p>Urgency</p>
+        <p>Decided resolution date</p>
+        <p>Owner:</p>
+        <p>Approve:</p>
+        <p>Assignee</p>
+        <p>Attachment:</p>
+        <p>Descriptions:</p>
+        <br>
+        <br>
+        <br>
+        <p>Category:</p>
+      </div>
+      <div class="containerTwo">
+        <p>11/17/2021</p>
+        <p>Done</p>
+        <p>High</p>
+        <p>11/17/2021</p>
+        <p>Stephen King</p>
+        <p>Manager 1</p>
+        <p>Admin 2</p>
+        <br>
+        <br>
+        <div class="textarea">
+          <textarea name="" id="" cols="20" rows="5"></textarea>
+        </div>
+        <p>Hardware Update</p>
+      </div>
+    </div>
+
+    <div class="LeaveFeedback">
+      <button class="buttonLeaveFeedback">Leave Feedback</button>
+    </div>
+
+  </div>
+
+  <div class="button">
+    <div>
+      <button class="history" [routerLink]="['/ticketOverview','history']">History</button>
+    </div>
+    <div>
+      <button class="comment" [routerLink]="['/ticketOverview','comment']">Comment</button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+</div>
